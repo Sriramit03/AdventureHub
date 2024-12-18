@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+US+Trad+Guides&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+/* General Styles */
+body {
+  font-family: "Rubik";
+  margin: 0px;
+  padding: 0;
+  background: #fbf9ee;
+  color: #67748a;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 2%;
+}
+
+.logo {
+  font-family: "Dancing Script";
+  font-weight: bold;
+  font-size: 30px;
+  color: #292b2f;
+}
+
+.navbar .menu {
+  display: flex;
+  gap:15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .menu a {
+  text-decoration: none;
+  color:#67748a ;
+  padding: 5px;
+}
+
+.menu a:hover{
+  background-color: #e9997c;
+  border-radius: 15px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger div {
+  background-color: #67748a;
+  width: 25px;
+  height: 3px;
+  margin: 4px 0;
+}
+
+
+/* Advertising  */
+.middle-content {
+  margin:4%;
+  display: flex;
+  justify-content: space-between;
+}
+.middle-content p {
+  width: 550px;
+  font-size: 40px;
+  font-weight: 600;
+  color: #343f53;
+}
+
+.main-img {
+  width: 600px;
+  height:300px;
+  border-radius: 5px;
+  translate: -25px 20px;
+}
+
+#img-div{
+  background-color: #e9997c;
+  width: 600px;
+  height:300px;
+  
+}
+
+/* Dropdown Styling */
+.select-container{
+  margin:4%;
+}
+.but-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+h1 {
+  text-align: center;
+  margin: 50px 0px;
+}
+.pref-select {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+label {
+  display: block;
+}
+select {
+  margin-top: 10px;
+  padding: 10px 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  font-family: "Rubik";
+}
+option {
+  margin-top: 10px;
+  font-size: 14px;
+  padding: 8px;
+  background-color: #fbf9ee;
+}
+
+/* Button Styling */
+button {
+  background-color: #e9997c;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Rubik"
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#result{
+  display: none;
+  justify-content: center;
+}
+/* Result  */
+#res-container{
+  background-color: #fbebe5;
+  border:1px solid white;
+  border-radius: 15px;
+  width:1/2;
+  margin:0% 4% 4% 4%;
+}
+#res-container p{
+  padding: 10px;
+  line-height: 20px;
+  word-spacing: 4px;
+}
+#res-container h3{
+  text-align: center;
+}
+footer{
+  height:120px;
+  width:100%;
+  background-color:#f4efd1; 
+}
+
+footer div,footer p{
+  padding-top: 10px;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design for mobile*/
+@media (max-width: 500px) {
+
+  /* Mobile handburger menu design */
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    padding: 10px;
+    background-color: #f4efd1;
+  }
+  .menu a:hover{
+    background-color: #e9997c;
+    border-radius: 15px;
+  }
+
+  .navbar .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Advertising content  */
+  .middle-content {
+    flex-direction: column;
+  }
+
+  .middle-content p {
+    width: 100%;
+    font-size: 24px;
+
+  }
+  .main-img {
+    height:100%;
+    width:100%;
+    translate: 0px 0px;
+  }
+  #img-div{
+    width: 100%;
+    height: auto;
+    background-color:#f4efd1;
+  }
+
+/* Preference Selectors */
+  .pref-select{
+    flex-direction: column;
+    justify-content: center;
+  }
+  select{
+    margin: 20px;
+  }
+}

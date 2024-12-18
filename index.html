@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adventure Hub</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Navigators -->
+    <nav class="navbar">
+      <div class="logo">Adventure Hub</div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destination">Destination</a></li>
+      </ul>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+
+    <!-- Advertising -->
+    <div class="middle-content">
+      <p>Not sure where to go? Let your preferences guide the way!</p>
+      <div id="img-div">
+        <img src="./Images/Travel1.jpg" alt="Travel" class="main-img" />
+      </div>
+    </div>
+
+    <!-- Preference Selectors -->
+    <div class="select-container">
+      <h1>Select your preferences</h1>
+      <form>
+        <div class="pref-select">
+          <div>
+            <label>Do you prefer the mountains or the beach? </label>
+            <select class="text-options" id="place">
+              <option value="Mountain">Mountain</option>
+              <option value="Beach">Beach</option>
+            </select>
+          </div>
+          <div>
+            <label>Are you looking for adventure or relaxation?</label>
+            <select class="text-options" id="activity">
+              <option value="Adventure">Adventure</option>
+              <option value="Relaxation">Relaxation</option>
+            </select>
+          </div>
+          <div>
+            <label>What's your budget?</label>
+            <select class="text-options" id="budget">
+              <option value="Low">Low</option>
+              <option value="High">High</option>
+              <option value="Medium">Medium</option>
+            </select>
+          </div>
+        </div>
+        <div class="but-container">
+          <button onclick="" id="btn-submit">Recommend</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Result -->
+    <div id="result">
+      <div id="res-container">
+        <h3>Our Recommendation</h3>
+        <p id="output"></p>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+  </body>
+  <!-- Footer -->
+  <footer>
+    <div class="logo">
+      <span>Adventure Hub</span>
+    </div>
+    <p>Copyright © 2024 Adventure Hub, Inc</p>
+  </footer>
+</html>
