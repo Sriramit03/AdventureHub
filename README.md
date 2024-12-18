@@ -1,5 +1,5 @@
 
-                            Adventure Hub
+                                                                Adventure Hub
 
 A website that recommends tourist places to people based on their preferences.
 
