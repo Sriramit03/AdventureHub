@@ -9,7 +9,7 @@ A website that recommends tourist places to people based on their preferences.
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/Sriramit03/AdventureHub.git
 ```
 
 Go to the project directory
