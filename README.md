@@ -1,5 +1,5 @@
 
-                                                                Adventure Hub
+                                                          Adventure Hub
 
 A website that recommends tourist places to people based on their preferences.
 
@@ -15,7 +15,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd AdventureHub
 ```
 
 Start the server
